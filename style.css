@@ -1,9 +1,13 @@
+/*OBECNE NASTAVENI*/
+
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     background: #181818;
     margin: 0;
 }
+
+/*HEADER*/
 
 .headerr {
     height: 100vh;
@@ -20,6 +24,8 @@
     border-bottom: 3px solid #5000ff;
 }
 
+/*HEADER BEZ BORDERU DOLE, ABY TO BYLO DOBRY NA STRANKU "DOMU"*/
+
 .header2 {
     height: 100vh;
     display: flex;
@@ -34,23 +40,7 @@
     background-position: center;
 }
 
-.obrazek {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-bottom: 3px solid #5000ff;
-}
-
-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-}
+/*PREVAZNE PRO ANIMACI TEXTU "FLEEWEB" KTERY JE UMISTEN NA LEVO V NAVIGACI*/
 
 .nazev {
     float: left;
@@ -71,6 +61,8 @@ img {
     background-size: 400%;
 }
 
+/*TOHLE JE TA ANIMACE*/
+
 @keyframes rainbow {
 	0% {
 		background-position: 0%;
@@ -80,6 +72,8 @@ img {
 		background-position: 400%;
 	}
 }
+
+/*TADY JSOU VECI PRO NAVIGACI*/
 
 ol {
     padding: 0%;
@@ -112,6 +106,8 @@ li a:hover {
     text-shadow: #5000ff;
 }
 
+/*TOHLE JE TEN BOXIK VE KTEREM JE TEXT*/
+
 .boxik {
     display: grid;
     border: 3px solid #5000ff;
@@ -128,6 +124,25 @@ li a:hover {
     line-height: 2;
 }
 
+/*PROJEKTY*/
+
+.projekt {
+    display: grid;
+    border: 3px solid #0c0027;
+    padding: 10px 25px ;
+    text-align: left;
+    box-shadow: 5px 5px 10px #08001a;
+    border-radius: 10px;
+    background-color: #252525;
+    width: 90%;
+    text-decoration: none;
+    margin: 0 auto;
+    margin: 2%;
+    line-height: 2;
+}
+
+/*TOTO JE FOOTER*/
+
 .footerino {
     background-color: #000000;
     text-align: center;
@@ -139,6 +154,8 @@ li a:hover {
     padding-top: 30px;
     border-top: 3px solid #5000ff;
 }
+
+/*TOTO JE PRO DALSI ANIMACI*/
 
 .haha {
     background-color: #00000000;
@@ -153,6 +170,8 @@ li a:hover {
 	animation: rainbow 12s linear infinite;
     background-size: 400%;
 }
+
+/*TOHLE TADY MUSI BYT, PROTOZE NECO NENI JAK JE, TAKZE JSEM TO UDELAL TAKHLE XDD*/
 
 h2, h3, p, a {
     background-color: #252525;
@@ -174,7 +193,7 @@ h2, h3, p, a {
     background-color: #252525;
 }
 
-/*RESPONZIVITA*/
+/*RESPONZIVITA PRO MOBILNI TELEFON CI TABLET*/
 
 @media (max-width: 900px) {
     body {
@@ -185,12 +204,13 @@ h2, h3, p, a {
         height: 100vh;
     }
 
-    img {
-        height: 100vh;
-    }
 
     .boxik {
         width: 55%;
+    }
+
+    .projekt {
+        width: 85%;
     }
 }
 
@@ -203,16 +223,35 @@ h2, h3, p, a {
         height: 100vh;
     }
 
-    img {
-        height: 100vh;
-    }
 
     .boxik {
         width: 60%;
     }
+
+    .projekt {
+        width: 80%;
+    }
 }
 
 @media (max-width: 500px) {
+    body {
+        font-size: 12px;
+    }
+
+    header {
+        height: 100vh;
+    }
+
+    .boxik {
+        width: 65%;
+    }
+
+    .projekt {
+        width: 78%;
+    }
+}
+
+@media (max-width: 420px) {
     body {
         font-size: 11px;
     }
@@ -221,16 +260,20 @@ h2, h3, p, a {
         height: 100vh;
     }
 
-    img {
-        height: 100vh;
+    .boxik {
+        width: 70%;
     }
 
-    .boxik {
-        width: 65%;
+    .projekt {
+        width: 72%;
+    }
+
+    nav {
+        font-size: 9px;
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 380px) {
     body {
         font-size: 10px;
     }
@@ -245,5 +288,13 @@ h2, h3, p, a {
 
     .boxik {
         width: 70%;
+    }
+
+    .projekt {
+        width: 70%;
+    }
+
+    nav {
+        font-size: 8.5px;
     }
 }
